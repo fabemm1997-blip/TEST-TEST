@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "functions": {
+    "api/claude.js": { "maxDuration": 30 },
+    "api/scrape.js": { "maxDuration": 30 },
+    "api/scrape-test.js": { "maxDuration": 10 }
+  }
+}
